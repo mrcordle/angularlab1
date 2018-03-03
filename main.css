@@ -42,6 +42,10 @@ li{
     margin: 0;
     width: 200px;
 }
+li:hover{
+    font-size:22px;
+    color: red;
+}
 #exit {
     color:black;
     font: 14px/100% arial, sans-serif;

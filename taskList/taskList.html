@@ -1,0 +1,5 @@
+<ol>
+<li ng-repeat="task in $ctrl.tasks | filter:$ctrl.search track by $index">
+    <span>{{task}}</span><span id="exit" ng-click="$ctrl.remove($index)">X</span>
+</li>
+</ol>

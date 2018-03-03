@@ -8,25 +8,17 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
-    <div class"main" ng-app="app" ng-controller="FormController as form" ng-keyup="$event.keyCode == 13 && form.addTask()">
-    <div class="container">
-    <h1>TODO List</h1>
-    <p>A place to store things you have to do! </p>
-    
-    
-    <input type="text" ng-model="form.search" placeholder="Filter your to-do">
-    <ol>
-    <li ng-repeat="task in form.tasks | filter:form.search">
-        <span>{{task}}</span><span id="exit" ng-click="form.remove(task)">X</span>
-    </li>
-    </ol>
-    <input type="text" ng-model="form.newTask" placeholder="Add to your to-do">
-    <button ng-click="form.addTask();">Add</button>
-    </div>
-    </div>
+    <div class"main" ng-app="app" >
+  
+<taskform></taskform>
 
+</div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
     <script src="index.js"></script>
-    <script src="form-controller.js"></script>
+    <script src="taskForm/taskForm.js"></script>
+    <script src="taskForm/form-controller.js"></script>
+    <script src="taskList/taskList.js"></script>
+    <script src="taskList/list-controller.js"></script>
+
 </body>
 </html>
