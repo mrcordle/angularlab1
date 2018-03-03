@@ -5,8 +5,7 @@
         templateUrl: 'taskList/taskList.html',
         bindings: {
             tasks: '<',
-            search: '<',
-            remove: '<'
+            search: '<'
           }
 
     });

@@ -1,11 +1,13 @@
 
     <div class="container">
-    <h1>TODO List</h1>
+    <div class="row">
+    <a id="back" href="#!/"> ← Back</a></div>
+    <h1 id="formH">TODO List</h1>
     <p>A place to store things you have to do! </p>
     
-    
+
     <input type="text" ng-model="$ctrl.search" placeholder="Filter your to-do">
     <list tasks="$ctrl.tasks" search="$ctrl.search" remove="$ctrl.remove"></list>
-    <input type="text" ng-model="$ctrl.newTask" placeholder="Add to your to-do">
-    <button ng-click="$ctrl.addTask();"ng-keyup="$event.keyCode == 13 && form.addTask()" >Add</button>
+    <input type="text" ng-model="$ctrl.newTask" ng-keyup="$event.keyCode == 13 && $ctrl.addTask()" placeholder="Add to your to-do">
+    <button ng-click="$ctrl.addTask();" >Add</button>
     </div>
